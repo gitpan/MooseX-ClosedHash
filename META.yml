@@ -1,0 +1,32 @@
+---
+abstract: 'blessed coderefs (closing over a hash) with Moose'
+author:
+  - 'Toby Inkster <tobyink@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.59
+configure_requires:
+  ExtUtils::MakeMaker: 6.59
+distribution_type: module
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06'
+keywords: []
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: MooseX::ClosedHash
+name: MooseX-ClosedHash
+no_index:
+  directory:
+    - examples
+    - inc
+    - t
+    - xt
+requires:
+  perl: 5.8.0
+resources:
+  bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=MooseX-ClosedHash
+  homepage: https://metacpan.org/release/MooseX-ClosedHash
+  license: http://dev.perl.org/licenses/
+  repository: https://github.com/tobyink/p5-moosex-closedhash
+version: 0.001
