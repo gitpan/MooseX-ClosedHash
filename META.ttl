@@ -26,6 +26,9 @@ dist:project
 		nfo:fileName "lib/MooseX/ClosedHash.pm";
 		nfo:programmingLanguage "Perl";
 	];
+	cpant:requires    "Moose 2.0400"^^cpant:dsWithVersion;
+	cpant:test_requires "Test::Moose"^^cpant:dsWithoutVersion;
+	cpant:test_requires "Test::More 0.96"^^cpant:dsWithVersion;
 	cpant:version_from [
 		a nfo:FileDataObject;
 		a nfo:SourceCode;
@@ -43,6 +46,7 @@ dist:project
 	doap:maintainer   cpan:tobyink;
 	doap:programming-language "Perl";
 	doap:release      dist:v_0-001;
+	doap:release      dist:v_0-002;
 	doap:repository   [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-moosex-closedhash>;
@@ -57,6 +61,24 @@ dist:v_0-001
 	dcs:released-by   cpan:tobyink;
 	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-ClosedHash-0.001.tar.gz>;
 	doap:revision     "0.001"^^xsd:string.
+
+dist:v_0-002
+	a                 doap:Version;
+	dc:identifier     "MooseX-ClosedHash-0.002"^^xsd:string;
+	dc:issued         "2013-06-23"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Packaging;
+			rdfs:label "Add dependency on Moose. (Duh!)";
+		];
+		dcs:item [
+			a dcs:Packaging;
+			rdfs:label "Slightly improved test cases.";
+		];
+	];
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-ClosedHash-0.002.tar.gz>;
+	doap:revision     "0.002"^^xsd:string.
 
 cpan:tobyink
 	a                 foaf:Person;
